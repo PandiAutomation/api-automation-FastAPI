@@ -1,0 +1,73 @@
+pipeline {
+    agent any
+
+    tools {
+        maven 'Maven_3'    // Configure Maven_3 in Jenkins global tool config
+        jdk 'JDK11'        // Configure JDK11 in Jenkins global tool config
+    }
+
+    environment {
+        ALLURE_RESULTS = 'target/allure-results'
+        ALLURE_REPORT = 'target/allure-report'
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                echo 'Checking out code...'
+                checkout scm
+            }
+        }
+
+        stage('Build') {
+            steps {
+                echo 'Building project...'
+                sh 'mvn clean install -DskipTests'
+            }
+        }
+
+        stage('Run Tests') {
+            steps {
+                echo 'Running tests...'
+                sh 'mvn test'
+            }
+        }
+
+        stage('Generate Allure Report') {
+            steps {
+                echo 'Generating Allure Report...'
+                sh "allure generate ${ALLURE_RESULTS} --clean -o ${ALLURE_REPORT}"
+            }
+        }
+
+        stage('Publish Allure Report') {
+            steps {
+                script {
+                    allure([
+                        results: [[path: "${ALLURE_RESULTS}"]],
+                        includeProperties: true,
+                        jdk: ''
+                    ])
+                }
+            }
+        }
+
+        stage('Archive Report') {
+            steps {
+                archiveArtifacts artifacts: 'target/allure-report/**', fingerprint: true
+            }
+        }
+    }
+
+    post {
+        always {
+            cleanWs()
+        }
+        success {
+            echo 'Pipeline completed successfully!'
+        }
+        failure {
+            echo 'Pipeline failed.'
+        }
+    }
+}

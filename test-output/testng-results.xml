@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-03T23:35:41 GMT+04:00" name="Default suite" finished-at="2025-07-03T23:35:48 GMT+04:00" duration-ms="6705">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.jktech.tests.runners.TestRunner@49438269]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-07-03T23:35:41 GMT+04:00" name="Default test" finished-at="2025-07-03T23:35:48 GMT+04:00" duration-ms="6705">
+      <class name="com.jktech.tests.runners.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.jktech.tests.runners.TestRunner@49438269]" started-at="2025-07-03T23:35:41 GMT+04:00" name="setUpClass" finished-at="2025-07-03T23:35:41 GMT+04:00" duration-ms="362" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@d16209e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.jktech.tests.runners.TestRunner@49438269]" started-at="2025-07-03T23:35:41 GMT+04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-03T23:35:44 GMT+04:00" duration-ms="2368" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Create a book and validate the response"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Create the Book"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.jktech.tests.runners.TestRunner@49438269]" started-at="2025-07-03T23:35:44 GMT+04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-03T23:35:44 GMT+04:00" duration-ms="466" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Try to create a duplicate book"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Create the Book"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.jktech.tests.runners.TestRunner@49438269]" started-at="2025-07-03T23:35:44 GMT+04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-03T23:35:45 GMT+04:00" duration-ms="373" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Delete the book already created and validate the response"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Delete the book"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.jktech.tests.runners.TestRunner@49438269]" started-at="2025-07-03T23:35:45 GMT+04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-03T23:35:45 GMT+04:00" duration-ms="354" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Try to delte the book is not exists and validate the error message"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Delete the book"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.jktech.tests.runners.TestRunner@49438269]" started-at="2025-07-03T23:35:45 GMT+04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-03T23:35:46 GMT+04:00" duration-ms="585" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["End to End scenario - Create the book -> get the book details -> update the same book -"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["End to End flow to create, update, get and delete"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.jktech.tests.runners.TestRunner@49438269]" started-at="2025-07-03T23:35:46 GMT+04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-03T23:35:46 GMT+04:00" duration-ms="355" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Get all the books and validate"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login For Access Token"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.jktech.tests.runners.TestRunner@49438269]" started-at="2025-07-03T23:35:46 GMT+04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-03T23:35:46 GMT+04:00" duration-ms="364" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Get a book using book id and validate the response"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Get a Book using book id"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.jktech.tests.runners.TestRunner@49438269]" started-at="2025-07-03T23:35:46 GMT+04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-03T23:35:47 GMT+04:00" duration-ms="335" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Try to get the book with non exists id and validate the error response"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Get a Book using book id"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.jktech.tests.runners.TestRunner@49438269]" started-at="2025-07-03T23:35:47 GMT+04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-03T23:35:47 GMT+04:00" duration-ms="379" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Update the book already created and validate the response"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Update the Book"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.jktech.tests.runners.TestRunner@49438269]" started-at="2025-07-03T23:35:47 GMT+04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-03T23:35:47 GMT+04:00" duration-ms="371" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Try Update the book with non exists and validate the error message"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Update the Book"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.jktech.tests.runners.TestRunner@49438269]" started-at="2025-07-03T23:35:47 GMT+04:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-03T23:35:48 GMT+04:00" duration-ms="345" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with valid input and get the accessToken"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login For Access Token"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.jktech.tests.runners.TestRunner@49438269]" started-at="2025-07-03T23:35:48 GMT+04:00" name="tearDownClass" finished-at="2025-07-03T23:35:48 GMT+04:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.jktech.tests.runners.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
